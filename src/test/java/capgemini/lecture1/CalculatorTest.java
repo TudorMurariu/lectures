@@ -79,9 +79,9 @@ class CalculatorTest {
 
     @Test
     @DisplayName("We subtract a big negative from a small negative")
-    void dif_SmallNegativeAndBigNegative_positive() {
-        assertTrue(calculator.dif(-90, -9) > 0);
-        assertTrue(calculator.dif(-131243546,-77) > 0);
+    void dif_SmallNegativeAndBigNegative_negative() {
+        assertTrue(calculator.dif(-90, -9) < 0);
+        assertTrue(calculator.dif(-131243546, -77) < 0);
     }
 
     // multiply function

@@ -28,4 +28,12 @@ class CalculatorTest {
     void sum_twoBigPositiveNumbers_positiveNumber() {
         assertTrue(calculator.sum(Integer.MAX_VALUE, Integer.MAX_VALUE) > 0);
     }
+
+    @Test
+    @DisplayName("When we add two negative numbers we receive a negative number")
+        //Given-When-Then
+    void sum_twoPositiveNumbers_NegativeNumber() {
+        assertTrue(calculator.sum(-11, -22) < 0);
+    }
+
 }

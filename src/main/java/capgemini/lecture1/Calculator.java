@@ -9,5 +9,17 @@ public class Calculator {
         return (long) firstOp + secondOp;
     }
 
+    public long dif(int firstOp, int secondOp) {
+        return (long) firstOp - secondOp;
+    }
 
+    public long multiply(int firstOp, int secondOp) {
+        return (long) firstOp * secondOp;
+    }
+
+    public double divide(double firstOp, double secondOp) {
+        if(secondOp == 0)
+            throw new ArithmeticException("Can't divide by 0!");
+        return firstOp / secondOp;
+    }
 }
